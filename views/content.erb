@@ -1,12 +1,14 @@
-<% if session[:current_user_dn] %>
+<% if session[:current_user_mail] %>
+	<h2>Get Files</h2>
 
+	<h2>Upload Files</h2>
 <% else %>
 	<h2>Log In</h2>
 
 	<form action="/authenticate" method="post">
 		<p>
 			Username:
-			<input type="text" name="username">
+			<input type="text" name="email">
 		</p>
 		<p>
 			Password:
