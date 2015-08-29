@@ -2,6 +2,8 @@ require "sinatra"
 
 require_relative "ldap"
 
+enable :sessions
+
 get "/" do
 	erb :content
 end
