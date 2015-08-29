@@ -1,0 +1,1 @@
+ActiveLdap::Base.setup_connection host: 'ldap.domain.com', base: 'dc=domain,dc=com', bind_dn: 'cn=admin,dc=domain,dc=com', password: 'secret'
